@@ -15,8 +15,10 @@ Además del spoofing de información, el proyecto sienta las bases para un overl
 - **Modo "Real GPU"**: Opción en el lanzador para ejecutar aplicaciones sin inyección, mostrando la información real de tu hardware.
 - **Overlay en el Juego (En Desarrollo)**: Estructura para dibujar un HUD dentro de las aplicaciones que muestre FPS, temperatura e información de spoofing.
 
+ ## Estructura del Proyecto
 
-```## Estructura del Proyecto
+```
+```
 
 GltoolsEnvironment/
 ├── CMakeLists.txt                  # Configuración de CMake para compilar
