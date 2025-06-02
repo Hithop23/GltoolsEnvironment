@@ -19,31 +19,38 @@ Además del spoofing de información, el proyecto sienta las bases para un overl
 
 ```
 .
-├── CMakeLists.txt                # Archivo principal para compilar con CMake
-├── README.md                     # Documentación principal
-├── configs/                      # Configuraciones de spoofing
-│   ├── global_config.yaml        # Configuración global por defecto
-│   └── profiles/                 # Perfiles por aplicación
-│       ├── csgo.yaml             # Ejemplo: Perfil para CS:GO
-│       ├── steam_app_12345.yaml  # Ejemplo: Perfil para app de Steam
-│       └── valorant.yaml         # Ejemplo: Perfil para Valorant
-├── include/                      # Headers (.h)
-│   ├── config_loader.h           # Carga de configuración
-│   ├── hooks.h                   # Hooks generales
-│   ├── injector.h                # Librería inyectada (core)
-│   ├── overlay.h                 # Lógica del overlay
-│   ├── shared_state.h            # Estado compartido
-│   ├── spoof_opengl.h            # Hooks para OpenGL/GLX/EGL
-│   └── spoof_vulkan.h            # Hooks para Vulkan
-├── src/                          # Código fuente (.cpp)
-│   ├── config_loader.cpp         # Implementación carga de config
-│   ├── hooks.cpp                 # Implementación hooks
-│   ├── launcher.cpp              # Lanzador GUI
-│   ├── overlay.cpp               # Implementación overlay
-│   ├── spoof_opengl.cpp          # Implementación OpenGL/GLX/EGL
-│   ├── spoof_vulkan.cpp          # Implementación Vulkan
-│   └── utils.cpp                 # Funciones utilitarias
-└── install_dependencies.sh       # Script de instalación de dependencias
+GltoolsEnvironment/
+├── CMakeLists.txt                  # Configuración de CMake para compilar
+├── README.md                       # Documentación principal del proyecto
+├── install_dependencies.sh         # Script para instalar dependencias del sistema
+│
+├── configs/                        # Configuración de spoofing
+│   ├── global_config.yaml          # Configuración global (por defecto)
+│   └── profiles/                   # Perfiles específicos por aplicación
+│       ├── csgo.yaml
+│       ├── steam_app_12345.yaml
+│       └── valorant.yaml
+│
+├── include/                        # Archivos de cabecera (.h)
+│   ├── config_loader.h
+│   ├── hooks.h
+│   ├── injector.h
+│   ├── overlay.h
+│   ├── shared_state.h
+│   ├── spoof_opengl.h
+│   └── spoof_vulkan.h
+│
+├── src/                            # Código fuente (.cpp)
+│   ├── config_loader.cpp
+│   ├── hooks.cpp
+│   ├── launcher.cpp
+│   ├── overlay.cpp
+│   ├── spoof_opengl.cpp
+│   ├── spoof_vulkan.cpp
+│   └── utils.cpp
+│
+└── thirdparty/                     # Dependencias externas (por ejemplo, Dear ImGui)
+    └── imgui/
 ```
 ## Instalación de Dependencias
 
