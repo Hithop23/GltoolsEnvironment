@@ -1,5 +1,3 @@
-Aquí tienes el texto transformado en formato Markdown bien organizado:
-
 ```markdown
 # PCGLTools
 
@@ -20,33 +18,33 @@ Además del spoofing de información, el proyecto sienta las bases para un overl
 ## Estructura del Proyecto
 
 ```
-├── CMakeLists.txt             # Archivo principal para compilar con CMake
-├── README.md                  # Este archivo
-├── configs                    # Directorio para archivos de configuración
-│   ├── global_config.yaml     # Configuración global por defecto
-│   └── profiles               # Perfiles específicos por aplicación
-│       ├── csgo.yaml          # Ejemplo de perfil para CS:GO
-│       ├── steam_app_12345.yaml # Ejemplo de perfil para una app de Steam
-│       └── valorant.yaml      # Ejemplo de perfil para Valorant
-├── include                    # Archivos de encabezado (.h)
-│   ├── config_loader.h        # Declaraciones para la carga de configuración
-│   ├── hooks.h                # Declaraciones para hooks generales
-│   ├── injector.h             # Encabezado principal de la librería inyectada
-│   ├── overlay.h              # Declaraciones para la lógica del overlay
-│   ├── shared_state.h         # Declaraciones para variables globales compartidas
-│   ├── spoof_opengl.h         # Declaraciones para hooks de OpenGL/GLX/EGL
-│   └── spoof_vulkan.h         # Declaraciones para hooks de Vulkan
-├── src                        # Archivos fuente (.cpp)
-│   ├── config_loader.cpp      # Implementación de la carga de configuración
-│   ├── hooks.cpp              # Implementación de hooks generales
-│   ├── launcher.cpp           # Código del lanzador GUI
-│   ├── overlay.cpp            # Implementación de la lógica del overlay
-│   ├── spoof_opengl.cpp       # Implementación de hooks de OpenGL/GLX/EGL
-│   ├── spoof_vulkan.cpp       # Implementación de hooks de Vulkan
-│   └── utils.cpp              # Funciones de utilidad (FPS, temp, strings)
-└── install_dependencies.sh    # Script para instalar dependencias del sistema
+.
+├── CMakeLists.txt                # Archivo principal para compilar con CMake
+├── README.md                     # Documentación principal
+├── configs/                      # Configuraciones de spoofing
+│   ├── global_config.yaml        # Configuración global por defecto
+│   └── profiles/                 # Perfiles por aplicación
+│       ├── csgo.yaml             # Ejemplo: Perfil para CS:GO
+│       ├── steam_app_12345.yaml  # Ejemplo: Perfil para app de Steam
+│       └── valorant.yaml         # Ejemplo: Perfil para Valorant
+├── include/                      # Headers (.h)
+│   ├── config_loader.h           # Carga de configuración
+│   ├── hooks.h                   # Hooks generales
+│   ├── injector.h                # Librería inyectada (core)
+│   ├── overlay.h                 # Lógica del overlay
+│   ├── shared_state.h            # Estado compartido
+│   ├── spoof_opengl.h            # Hooks para OpenGL/GLX/EGL
+│   └── spoof_vulkan.h            # Hooks para Vulkan
+├── src/                          # Código fuente (.cpp)
+│   ├── config_loader.cpp         # Implementación carga de config
+│   ├── hooks.cpp                 # Implementación hooks
+│   ├── launcher.cpp              # Lanzador GUI
+│   ├── overlay.cpp               # Implementación overlay
+│   ├── spoof_opengl.cpp          # Implementación OpenGL/GLX/EGL
+│   ├── spoof_vulkan.cpp          # Implementación Vulkan
+│   └── utils.cpp                 # Funciones utilitarias
+└── install_dependencies.sh       # Script de instalación de dependencias
 ```
-
 ## Instalación de Dependencias
 
 Para compilar PCGLTools, necesitas instalar algunas librerías de desarrollo del sistema. En sistemas basados en Debian/Ubuntu (como Linux Mint), puedes usar el script proporcionado:
