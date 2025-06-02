@@ -18,7 +18,7 @@ Además del spoofing de información, el proyecto sienta las bases para un overl
 ## Estructura del Proyecto
 
 ```
-.
+```
 GltoolsEnvironment/
 ├── CMakeLists.txt                  # Configuración de CMake para compilar
 ├── README.md                       # Documentación principal del proyecto
